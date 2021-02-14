@@ -20,28 +20,28 @@ $(document).ready(
           console.log("caret-up");}
     });
 
-
-    let condition1 = (/\/formula\//.test(this.location.pathname));
-    let condition2 = ($( ".formula-example" ).length <= 0);
-    let condition3 = (window.location.pathname == '/');
-
-    // Если это страница контекста формулы и нет никаких данных, вставить предупреждалку с ошибкой
-    if (condition1 && condition2) {
-      insertEmptyOutputPlaque();
-    }
-
-
-    if (condition3) {
-      preventPageReboot();
-    } else {
-      getFormItems();
-    }
-
-
-    // Если на старнице с выдачей контестов формул нажали на знак вернуться к началу страницы
-    $(".caret-up-btn").click( function() {
-      window.location.replace("#");
-    });
+// 
+//     let condition1 = (/\/formula\//.test(this.location.pathname));
+//     let condition2 = ($( ".formula-example" ).length <= 0);
+//     let condition3 = (window.location.pathname == '/');
+// 
+//     // Если это страница контекста формулы и нет никаких данных, вставить предупреждалку с ошибкой
+//     if (condition1 && condition2) {
+//       insertEmptyOutputPlaque();
+//     }
+// 
+// 
+//     if (condition3) {
+//       preventPageReboot();
+//     } else {
+//       getFormItems();
+//     }
+// 
+// 
+//     // Если на старнице с выдачей контестов формул нажали на знак вернуться к началу страницы
+//     $(".caret-up-btn").click( function() {
+//       window.location.replace("#");
+//     });
   
   }
 );
